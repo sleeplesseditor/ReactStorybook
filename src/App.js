@@ -4,14 +4,14 @@ import Header from './components/Header/Header';
 import LazyLoader from './components/LazyLoader/LazyLoader';
 import './App.css';
 
-const AccordionPage = React.lazy(() => import('./pages/AccordionPage'));
+const AccordianPage = React.lazy(() => import('./pages/AccordianPage'));
 
 function App() {
   return (
     <Router>
       <Header />
         <Switch>
-          <Route exact path="/" component={LazyLoader(AccordionPage)} />
+          <Route exact path="/" component={LazyLoader(AccordianPage)} />
         </Switch>
     </Router>
   );
